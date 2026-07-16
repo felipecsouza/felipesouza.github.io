@@ -1,0 +1,37 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto 5rem auto;
+  padding: 0 2.5rem;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  padding: 1.875rem 0;
+}
+
+.header__menu {
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header a {
+  color: var(--c-13);
+  font: var(--texto-menu);
+  padding: 1.875rem 0;
+}
+
+@media (max-width: 62.5rem) {
+  .header {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,143 @@
+.formacao {
+  background-color: var(--c-13);
+  padding: 6.875rem;
+}
+
+.formacao__container {
+  margin-bottom: 0;
+}
+
+.formacao__titulo {
+  max-width: 5ch;
+  color: var(--c-14);
+}
+
+.formacao__texto {
+  max-width: 40ch;
+  color: var(--c-06);
+  margin-bottom: 3.75rem;
+}
+
+.formacao__texto > strong {
+  color: var(--branco);
+}
+
+.formacao__lista {
+  gap: 1.5625rem;
+  margin-bottom: 3.75rem;
+  flex-wrap: wrap;
+}
+.formacao__item {
+  flex: 1 1 160px;
+  background-color: var(--c-14);
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  position: relative;
+  /* min-width: 10rem; */
+}
+
+.formacao__item::before {
+  content: "";
+  width: 0.25rem;
+  height: 1.25rem;
+  background: var(--gradiente-detalhe);
+  position: absolute;
+  top: 3.1875rem;
+  left: -4px;
+}
+
+.formacao__grau,
+.formacao__instituicao {
+  font: var(--texto-formacao);
+  text-transform: uppercase;
+  color: var(--c-06);
+}
+
+.formacao__grau {
+  margin-bottom: 0.625rem;
+}
+
+.formacao__curso {
+  font: var(--titulo-formacao);
+  margin-bottom: 3.125rem;
+  color: var(--branco);
+  flex: 1;
+}
+
+.formacao__intensivo {
+  margin-bottom: 3.75rem;
+}
+
+.formacao__subtitulo {
+  font: var(--formacao-subtitulo);
+  color: var(--c-07);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.formacao__subtitulo > img {
+  position: absolute;
+  top: -4px;
+  left: -40px;
+}
+
+.formacao__cursos {
+  gap: 1.875rem;
+}
+
+.cursos__lista {
+  gap: 1.25rem;
+  font: var(--curso-texto);
+  color: var(--branco);
+}
+
+.cursos__lista li {
+  justify-content: space-between;
+}
+
+.cursos__lista li > span {
+  color: var(--c-07);
+}
+
+@media (max-width: 62.5rem) {
+  .formacao {
+    padding: 3.75rem 2.5rem;
+  }
+
+  .formacao__container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 1.25rem;
+  }
+
+  .formacao__titulo {
+    font-size: 2.5rem;
+    color: var(--branco);
+    max-width: initial;
+  }
+
+  .formacao__texto {
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    max-width: initial;
+  }
+
+  .formacao__intensivo {
+    margin-bottom: 2.5rem;
+  }
+
+  .formacao__lista {
+    margin-bottom: 2.5rem;
+  }
+
+  .formacao__subtitulo > img {
+    position: initial;
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .formacao__lista {
+    flex-direction: column;
+  }
+}
